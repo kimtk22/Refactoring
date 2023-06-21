@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="|청구 내역 (고객명:${data.customer})|"></h1>
+	<table>
+		<thead>
+			<tr>
+				<th>연극</th>
+				<th>좌석 수</th>
+				<th>금액</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="performance : ${data.performances}">
+				<td th:text="${performance.playName}"></td>
+				<td th:text="${performance.audience}"></td>
+				<td th:text="${T(com.bizplay.refactoring.util.Currency).usd(performance.amount)}"></td>
+			</tr>
+		</tbody>
+	</table>
+	<p>총액: <em th:text="${T(com.bizplay.refactoring.util.Currency).usd(data.totalAmount)}"></em></p>
+	<p>적립 포인트: <em th:text="${data.totalPoint}"></em>점</p>
+</body>
+</html>

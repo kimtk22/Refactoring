@@ -1,4 +1,4 @@
-package com.bizplay.refactoring.constants;
+package com.bizplay.refactoring.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
