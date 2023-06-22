@@ -83,7 +83,7 @@ public class RefactoringController2 {
 			throw new Exception("알 수 없는 공연 ID : " + perf.getPlayID());
 		}
 		
-		return plays.get(perf.getPlayID());
+		return result;
 	}
 
 	private int amountFor(Performance performance) throws Exception{

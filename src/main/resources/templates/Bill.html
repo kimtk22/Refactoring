@@ -12,6 +12,7 @@
 				<th>연극</th>
 				<th>좌석 수</th>
 				<th>금액</th>
+				<th>포인트</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -19,6 +20,7 @@
 				<td th:text="${performance.playName}"></td>
 				<td th:text="${performance.audience}"></td>
 				<td th:text="${T(com.bizplay.refactoring.util.Currency).usd(performance.amount)}"></td>
+				<td th:text="${performance.point}"></td>
 			</tr>
 		</tbody>
 	</table>
