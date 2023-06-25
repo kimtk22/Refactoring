@@ -13,7 +13,6 @@ import lombok.RequiredArgsConstructor;
 public class PerformanceCalculatorFactory {
 	private final List<PerformanceCalculator> calculators;
 	
-	
 	public PerformanceCalculator getCalculator(Genre genre) {
 		return calculators.stream().filter(calculator -> calculator.getGenre().equals(genre))
 							.findFirst()

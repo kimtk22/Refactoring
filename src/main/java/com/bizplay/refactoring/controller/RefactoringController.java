@@ -23,7 +23,7 @@ import lombok.RequiredArgsConstructor;
 public class RefactoringController {
 	private final Plays plays;
 
-	@PostMapping()
+	@PostMapping
 	@ResponseBody
 	public String invoices(@RequestBody Invoice invoice) throws Exception {
 		return statement(invoice);
