@@ -1,5 +1,7 @@
 package com.bizplay.refactoring.dto;
 
+import com.bizplay.refactoring.constant.Genre;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -8,5 +10,5 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 public class Play {
 	private String name;
-	private String type;
+	private Genre genre;
 }
